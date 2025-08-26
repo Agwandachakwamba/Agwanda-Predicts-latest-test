@@ -1,0 +1,24 @@
+
+android {
+    namespace 'com.agwanda.predicts'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.agwanda.predicts"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String", "FOOTBALL_API_KEY", "\"87a44f21652940bfa27f5ac8fdd4a914\""
+        buildConfigField "String", "ODDS_API_KEY", "\"b31e077b238563b56b01652b9b67025f\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
